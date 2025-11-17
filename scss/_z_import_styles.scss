@@ -1,0 +1,33 @@
+@import "bootstrap_532/scss/functions";
+@import "a_color_variables";
+@import "a_reset_bootstrap";
+@import "bootstrap_532/scss/bootstrap";
+
+@import "install_mixin";
+@import "install_reset";
+//@import "a_color_variables";
+//@import "a_reset_bootstrap";
+@import "install_typography";
+
+@import "aroot_variants";
+@import "aroot_varied_shades";
+
+@import "more_animation"; 
+@import "more_bootstrap"; 
+@import "more_element"; 
+
+@import "root_body"; 
+@import "root_container"; 
+@import "scss_header_base";
+@import "scss_header_navbar";
+@import "scss_header_hero";
+@import "root_footer";
+
+@import "section_all_common"; 
+@import "section_home"; 
+
+@import "section_contact"; 
+@import "section_casestudy";
+
+//admin
+//@import "../snippet/admin-dashboard/dark/style-dashboard.scss"; 

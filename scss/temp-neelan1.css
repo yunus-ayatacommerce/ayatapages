@@ -1,0 +1,37 @@
+.navbar-collapse{
+    background-color: red;
+}
+.nav-link{
+         }
+.nav-link.active{
+    
+}
+.dropdown-menu{
+    display:block;    
+}
+.nav-link.show {
+    
+    background-color: unset!important;
+}
+.navbar .navbar-nav .nav-item .nav-link.show:hover{
+    color:#252b42!important;font-weight: bold;
+}
+
+.dropdown-menu {}
+.dropdown-menu.show, .dropdown-menu{
+    background-color: unset!important;
+    display:inline-block;
+    min-width:75%;
+    margin-left:12.5%;
+    box-shadow:unset;
+    border:unset;
+}
+.dropdown-menu .dropdown-item{
+    text-align:center;
+}
+.dropdown-menu .dropdown-item.active, .dropdown-menu .active:hover{
+    box-shadow:unset;
+    border:1px solid red!important;
+    border-radius:2em!important;
+    background-color: white;
+}

@@ -1,0 +1,33 @@
+ol, ul {
+  list-style: none; 
+  margin: 0; padding: 0;
+}
+
+/* html, body, p, ul{
+  margin: 0;padding: 0;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none; 
+}
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container-xl{ padding: 0;  
+  @include media-breakpoint-max(1200px){
+    padding:1em;
+  }
+}
+ */

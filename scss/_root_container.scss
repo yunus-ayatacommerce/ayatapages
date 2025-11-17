@@ -1,0 +1,14 @@
+
+.container-xl{
+    max-width:1600px; margin: auto;     
+    @include media-breakpoint-min(1401px){padding: 0 6em;}
+    @include media-breakpoint-max(1400px){padding: 0 5em;}
+    @include media-breakpoint-max(1280px){padding: 0 4em;}
+    @include media-breakpoint-max(1200px){padding: 0 3em;}
+    @include media-breakpoint-max(1100px){padding: 0 2em;}
+    @include media-breakpoint-max(992px){padding: 0 1em;}
+    @include media-breakpoint-max(568px){padding: 0 0.5em;}
+}
+.vh-lg-100{ @include media-breakpoint-min(992px){min-height: 100vh;}}
+.vh-lg-60{ @include media-breakpoint-min(992px){min-height: 60vh;}}
+.vh-xl-100{ @include media-breakpoint-min(1200px){min-height: 100vh;}}

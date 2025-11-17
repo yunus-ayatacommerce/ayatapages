@@ -1,0 +1,105 @@
+header{overflow: hidden; }
+#mask{     
+    @include transition(1);    
+    position: relative;
+    .mask-img, .mask-border,.mask-border-animation, .mask-shadow{        
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background-image: url("images/hero-3dbox-shadow-1.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position:center;
+    }
+    .mask-border{
+        background-image: url("images/hero-3dbox-border-1.svg");     
+           
+    }
+    .mask-img{      
+        background-size: 160% auto;
+        background-position:center;
+        mask-image: url('images/hero-3dbox-mask-1.svg'); 
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: 100%;
+        animation: bg-scroll-horizontal 20s linear infinite; 
+        @include transition(.5);
+/*         img{
+            animation: img-scroll-horizontal 10s linear infinite; 
+            position: absolute;
+            //top: 50%;left: 50%;
+            //transform: translate(-50%, -50%);
+        } */
+        }
+    .mask-shadow{        
+        background-image: url("images/hero-3dbox-shadow.svg");
+    }
+/*     &:hover .mask-img,  &:hover .mask-border{        
+        //transform: translateX(800px) scale(0.01);
+        //transform: rotate(180deg);
+        @include transition(2);
+    } */
+    /* &:hover .mask-border{
+        @include transition(0.5);
+        animation: imageAnimation 2s;
+    } */
+    //&:hover{cursor: auto;}
+}
+@keyframes imageAnimation1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    99% {
+        transform: scale(1.05);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes imageAnimation2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    99% {
+        transform: scale(1.05);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+#mask.mask-1{
+    .mask-img{background-image: url('images/content/hero-bg-1.jpg');mask-image: url('images/hero-3dbox-mask1.svg'); }
+    .mask-border, .mask-border-animation{background-image: url("images/hero-3dbox-border1.svg");}
+    .mask-shadow{background-image: url("images/hero-3dbox-shadow1.svg");} 
+    .mask-border-animation{animation: imageAnimation1 1s;}
+}
+#mask.mask-2{
+    .mask-img{background-image: url('images/content/hero-bg-2.jpg');mask-image: url('images/hero-3dbox-mask2.svg'); }
+    .mask-border, .mask-border-animation{background-image: url("images/hero-3dbox-border2.svg");}
+    .mask-shadow{background-image: url("images/hero-3dbox-shadow2.svg");} 
+    .mask-border-animation{animation: imageAnimation2 1s;}
+}
+
+@include media-breakpoint-max(992px){
+    #mask .mask-img{
+        mask-image: unset!important; 
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: 100%;        
+    }
+    #mask .mask-border, #mask .mask-border-animation{display:none!important;}
+    #mask.mask-1 { 
+        .mask-img{mask-image: url('images/hero-3dbox-mask1-mob.svg')!important;}
+        .mask-shadow{background-image: url("images/hero-3dbox-mask2-mob.svg")!important;} 
+    }
+    #mask.mask-2{ 
+        .mask-img{mask-image: url('images/hero-3dbox-mask2-mob.svg')!important; }
+        .mask-shadow{background-image: url("images/hero-3dbox-mask1-mob.svg")!important;} 
+    }
+}

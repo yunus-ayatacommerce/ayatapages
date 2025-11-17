@@ -1,0 +1,43 @@
+footer{
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    #countrySelect {
+        outline:none;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid white!important;
+        border-radius: 0!important;
+        cursor: pointer;
+        color:white; 
+        &:hover{
+            border-bottom: 1px solid $secondary-dark!important;
+            background: $secondary-dark;
+        }
+        &:focus {
+            background: $secondary-dark;
+            
+        }    
+        option {
+            padding: 5px 0;
+            border-radius: 0!important;
+            border: none;
+        }
+    }
+
+}
+
+#back-to-top{
+    transition:0.2s; position: fixed;
+    bottom: 6px; right: 6px;color:$base; font-size: 35px;
+    //border:4px solid white;
+    //background-color: white;
+    height: 43px;width: 43px;    
+    &:hover{color: white;bottom:11px;transition:0.2s;}
+    @include media-breakpoint-max(992px){
+        display: none !important;
+    }
+}

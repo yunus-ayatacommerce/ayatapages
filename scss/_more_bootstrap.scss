@@ -1,0 +1,42 @@
+
+.row{ margin: 0!important;padding: 0;}
+
+
+
+.flex-center{ display: flex; align-items: center; justify-content: center;}
+.flex-between{ display: flex; align-items: center; justify-content: space-between;}
+
+
+.hover-underline:hover{text-decoration: underline!important;color: black;}
+.hover:hover .img-hover-zoom{@include zoom(1.1); @include transition(0.5);}
+.hover .img-hover-zoom{@include zoom(1);@include transition(0.5);}
+.hover{
+    .hover-show{ @include opacity(0);}
+    &:hover{.hover-show{ @include opacity(1);}}
+}
+
+.shadow{box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)!important;-webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)!important;-moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)!important;}
+.rounded{border-radius: 0.25em;}
+
+.jump{ @include transform(0,0); transition: all .5s;}
+.jump:hover{@include transform(0,-4px);transition: all .5s;}
+.transition, .blink{@include transition(.5);}
+.bi-bold::before{font-weight:bold!important;}
+.cursor-pointer{cursor: pointer;}
+.absolute-center{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.bg-center{
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.bg-left{
+    background-position:top left;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.bg-right{
+    background-position:top right;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.bg-contain{background-size: contain;}
