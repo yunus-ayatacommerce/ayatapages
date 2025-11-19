@@ -1,7 +1,4 @@
-@import "scss/z_import_styles";
-@import "scss/section_casestudy";
-@import "/scss/install_typography";
-@import "/scss/install_reset";
+
 
 * {
     margin: 0;
@@ -149,6 +146,21 @@ h6 {
 }
 
 //AI page scss starts  here
+
+.dark-section{
+    background:#1D1E22;
+    color: #fff!important;
+}
+
+.blue-section{
+    background: #0d47a1;
+    color: #fff!important;
+
+}
+
+.blue-section img{
+    max-width: 250px;
+}
 
 /* Regular */
 @font-face {

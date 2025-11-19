@@ -12,9 +12,18 @@ a:active {
   text-decoration: none;
 }
 
-.body {
-  background-color: #F4F4F3;
-  font-family: "matter";
+body {
+  font-family: "Matter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Matter", sans-serif;
+  font-weight: 700;
 }
 
 .bgbox {
@@ -119,6 +128,20 @@ a:active {
   padding: 0;
 }
 
+.dark-section {
+  background: #1D1E22;
+  color: #fff !important;
+}
+
+.blue-section {
+  background: #0d47a1;
+  color: #fff !important;
+}
+
+.blue-section img {
+  max-width: 250px;
+}
+
 /* Regular */
 @font-face {
   font-family: "Matter";
@@ -149,8 +172,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "matter-semibold", sans-serif;
+  font-family: "Matter-semibold", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #000;
+}
+
+.pillar-icon {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block !important;
+}
+
+.pillar-header[aria-expanded=true] .pillar-icon {
+  transform: rotate(45deg) !important;
+}
+
+.pillar-header[aria-expanded=false] .pillar-icon {
+  transform: rotate(0deg);
+}
+
+.custom-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50px !important;
+  cursor: pointer;
 }/*# sourceMappingURL=style-theme.css.map */
